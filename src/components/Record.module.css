@@ -1,0 +1,66 @@
+.record {
+  margin-top: -1.6875rem;
+}
+
+.record form {
+  width: 100%;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.record form input {
+  width: 39.875rem;
+  height: 3.375rem;
+  padding: 1rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+}
+
+.record form button {
+  width: 5.625rem;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.record footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.record footer div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.record footer div p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.counter {
+  width: 1.5625rem;
+  height: 1.1875rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 62.4375rem;
+}
