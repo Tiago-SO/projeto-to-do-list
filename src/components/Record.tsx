@@ -1,5 +1,6 @@
 import styles from './Record.module.css';
 import plusButton from '../assets/plus-button.svg';
+import { Tasks } from './Tasks';
 
 export function Record() {
   return(
@@ -12,6 +13,7 @@ export function Record() {
         <div><p>Tarefas criadas</p><span className={styles.counter}>0</span></div>
         <div><p>Concluídas</p><span className={styles.counter}>0</span></div>
       </footer>
+      <Tasks />
     </div>
   )
 }
