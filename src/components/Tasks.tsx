@@ -1,6 +1,11 @@
 import styles from './Tasks.module.css';
 
-export function Tasks() {
+interface Content {
+  content: string;
+}
+
+export function Tasks(content:Content) {
+  console.log(content)
   return(
     <div className={styles.task}>
       

@@ -9,7 +9,9 @@ function App() {
       <Header />
 
       <div className={styles.wrapper}>
-      <Record />
+      <main>
+        <Record />
+      </main>
 
       </div>
     </div>
