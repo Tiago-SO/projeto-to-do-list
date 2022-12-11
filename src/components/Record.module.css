@@ -7,6 +7,7 @@
   margin-bottom: 4rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -21,6 +22,7 @@
 
 .record form button {
   width: 5.625rem;
+  height: 3.25rem;
   background: var(--blue-dark);
   color: var(--gray-100);
   font-size: 0.875rem;
@@ -32,6 +34,10 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+}
+
+.record form button:hover {
+  background: var(--blue)
 }
 
 .record footer {
@@ -50,6 +56,10 @@
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--blue);
+}
+
+.record footer div:last-child p{
+  color: var(--purple);
 }
 
 .counter {

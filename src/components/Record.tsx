@@ -7,12 +7,17 @@ export function Record() {
     <div className={styles.record}>
       <form action="" >
         <input type="text" placeholder='Adicione uma nova tarefa'/>
-        <button><span>Criar</span><img src={plusButton} alt="" /></button>
+        <button type="submit">
+          <span>Criar</span>
+          <img src={plusButton} alt="" />
+        </button>
       </form>
       <footer>
         <div><p>Tarefas criadas</p><span className={styles.counter}>0</span></div>
         <div><p>Concluídas</p><span className={styles.counter}>0</span></div>
       </footer>
+      <Tasks />
+      <Tasks />
       <Tasks />
     </div>
   )
