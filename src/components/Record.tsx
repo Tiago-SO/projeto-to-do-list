@@ -5,15 +5,20 @@ import { Tasks } from './Tasks';
 const tasks = [
   {
     id: 1,
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cupiditate dolorum a vero autem ipsam rerum ipsa odio ex?'
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cupiditate dolorum a vero autem ipsam rerum ipsa odio ex?'
+      }
+    ]
   }
 ];
 
 export function Record() {
-  return(
+  return (
     <div className={styles.record}>
       <form action="" >
-        <input type="text" placeholder='Adicione uma nova tarefa'/>
+        <input type="text" placeholder='Adicione uma nova tarefa' />
         <button type="submit">
           <span>Criar</span>
           <img src={plusButton} alt="" />
@@ -25,10 +30,10 @@ export function Record() {
       </footer>
       {tasks.map(tasks => {
         return (
-        <Tasks 
-          content={tasks.content}
-        />
-      )
+          <Tasks
+            content={tasks.content}
+          />
+        )
       })}
     </div>
   )
