@@ -1,23 +1,25 @@
+import { ITask } from '../App';
 import styles from './Tasks.module.css';
 
+interface Props{
+  task: ITask;
+  onDelete: (taskId: string) => void;
+  onComplete: (taskId: string) => void;
+}
 
-
-export function Tasks({content}) {
-  console.log(content)
+export function Tasks({ task,onDelete,onComplete }: Props) {
+  
   return(
     <div className={styles.task}>
       
       <div>
-      <input type="checkbox" />
-        {content.map(line =>{
-          if (line.type === 'paragraph') {
-            return <p>{line.content}</p>;
-          } else if (line.type !== 'paragraph') {
-            return <p>{line.content}</p>;
-          };
-        })}
+      <input type="checkbox" onClick={() => onComplete(task.id)} />
+      <p className={task.isCompleted ? styles.textCompleted : ""}>{task.title}</p>
+        
       </div>
-      <button className={styles.trash} title="Apagar tarefa" type="submit"></button>
+
+
+      <button className={styles.trash} onClick={() => onDelete(task.id)}></button>
     </div>
   )
 }

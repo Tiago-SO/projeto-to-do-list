@@ -63,8 +63,9 @@
 }
 
 .counter {
-  width: 1.5625rem;
+  min-width: 1.5625rem;
   height: 1.1875rem;
+  padding: 0 0.5rem;
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--gray-200);
@@ -73,4 +74,24 @@
   justify-content: center;
   align-items: center;
   border-radius: 62.4375rem;
+}
+
+.empty {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  gap: 1rem;
+  color: var(--gray-300);
+  text-align: center;
+}
+
+.empty p {
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.empty span {
+  line-height: 0;
 }
